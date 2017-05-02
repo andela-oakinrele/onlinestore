@@ -1,0 +1,9 @@
+<div style="margin-left:20px; margin-top: 20px; margin-bottom: 20px;">
+    <h3>Create Role</h3>
+  <%= form_for :role, url: '/roles' do %>
+      <div class="input-control text">
+        <input type="text" name="role[title]" placeholder="Add new role..." required/>
+      </div>
+      <button type="submit" class="button primary" style="margin-left: 20px;"><span class="mif-plus"></span> Create...</button>
+  <% end %>
+</div>

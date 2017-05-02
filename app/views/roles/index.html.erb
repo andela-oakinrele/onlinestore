@@ -1,0 +1,14 @@
+<%= render 'navbar' %>
+
+<h1 class="family text-light" style="padding-left: 10px;">Manage Roles</h1>
+
+
+<%= render 'role' %>
+
+<% if flash[:notice] %>
+    <div class="notice"><%= flash[:notice] %></div>
+<% end %>
+
+<%= render 'roles' %>
+
+<%= render 'edit' %>

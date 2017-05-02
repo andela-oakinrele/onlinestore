@@ -1,0 +1,34 @@
+// Place all the styles related to the roles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.logout {
+  width: 250px;
+  margin-right: 10px;
+}
+
+.navbar {
+  background-color: darkslategrey;
+}
+
+.h-menu>li>a {
+  color: #fff;
+  font-family: "Trebuchet MS";
+  font-size: 15px;
+
+  &:hover {
+    background-color: seagreen;
+  }
+}
+
+.menu {
+  padding-bottom: 3px;
+}
+
+.family {
+  font-family: "Trebuchet MS";
+}
+
+.dialog-overlay {
+  background-color: rgba(0, 15, 25, .8);
+}

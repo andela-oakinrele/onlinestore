@@ -1,0 +1,13 @@
+<div class="container">
+  <div data-role="dialog" data-close-button="true" data-width="400" data-overlay="true" data-overlay-color="op-dark" data-overlay-click-close="true"  id="editrole">
+    <div style="margin-left:20px; margin-top: 20px; margin-bottom: 20px;">
+      <h3>Edit Role</h3>
+      <%= form_for :role, url: '/roles', html: {id: 'editform'}, method: 'PUT' do %>
+          <div class="input-control text">
+            <input type="text" name="role[title]" id="update" required/>
+          </div>
+          <button type="submit" class="button primary" style="margin-left: 20px;"><span class="mif-plus"></span> Update...</button>
+      <% end %>
+    </div>
+  </div>
+</div>

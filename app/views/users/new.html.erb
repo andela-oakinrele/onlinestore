@@ -1,0 +1,53 @@
+<div class="signup-form padding20 block-shadow">
+  <%= form_for :user, url: '/users' do %>
+      <h1 class="text-light login">Create an Account</h1>
+      <hr class="thin"/>
+      <br />
+      <div class="input-control text full-size" data-role="input">
+        <label for="user_login" class="login">Firstname:</label>
+        <input type="text" name="user[firstname]" id="user_login" placeholder="firstname" required/>
+        <button class="button helper-button clear"><span class="mif-cross"></span></button>
+      </div>
+      <br />
+      <br />
+      <div class="input-control text full-size" data-role="input">
+        <label for="user_login" class="login">Lastname:</label>
+        <input type="text" name="user[lastname]" id="user_login" placeholder="lastname" required/>
+        <button class="button helper-button clear"><span class="mif-cross"></span></button>
+      </div>
+      <br />
+      <br />
+      <div class="input-control text full-size" data-role="input">
+        <label for="user_login" class="login">Email:</label>
+        <input type="email" name="user[email]" id="user_login" placeholder="email" required/>
+        <button class="button helper-button clear"><span class="mif-cross"></span></button>
+      </div>
+      <br />
+      <br />
+      <div class="input-control password full-size" data-role="input">
+        <label for="user_password" class="login">Password:</label>
+        <input type="password" name="user[password]" id="user_password" placeholder="password" required />
+        <button class="button helper-button reveal"><span class="mif-looks"></span></button>
+      </div>
+      <br />
+      <br />
+      <div class="input-control password full-size" data-role="input">
+        <label for="user_password_confirmation" class="login">Confirm Password:</label>
+        <input type="password" name="user[password_confirmation]" id="user_password" placeholder="Confirm Password" required />
+        <button class="button helper-button reveal"><span class="mif-looks"></span></button>
+      </div>
+      <br />
+      <br />
+      <div class="login"> Sign up as Vendor?? &nbsp; &nbsp;
+        <label class="switch">
+          <input type="checkbox" name="user[role_id]" value="<%= @vendor.id %>"/>
+          <span class="check"></span>
+        </label>
+      </div>
+      <br />
+      <br />
+      <div class="form-actions">
+        <button type="submit" class="button primary login">Signup</button>
+      </div>
+  <% end %>
+</div>

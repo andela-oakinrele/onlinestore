@@ -1,0 +1,25 @@
+<div class="login-form padding20 block-shadow">
+  <%= form_for(:session, url: login_path) do |f| %>
+
+      <h1 class="text-light login">Login to Shopify</h1>
+      <hr class="thin"/>
+      <br />
+      <%= f.label :email, class: 'login' %>
+      <%= f.email_field :email, class: 'input-control text full-size', 'data-role'=>'input', required: true %>
+      <br />
+      <br />
+      <%= f.label :password,  class: 'login' %>
+      <%= f.password_field :password, class: 'input-control password full-size', 'data-role'=>'input', required: true %>
+      <br />
+      <br />
+      <%= f.submit "Log in", class: "button primary login" %>
+  <% end %>
+
+  <div class="signup login">
+    <div>Click here to  &nbsp;
+      <span class="block-shadow-info">
+        <%= link_to "Sign up..", controller: "users", action: "new" %>
+        </span>
+    </div>
+  </div>
+</div>
