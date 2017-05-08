@@ -1,0 +1,13 @@
+<div class="container">
+  <div data-role="dialog" data-close-button="true" data-width="400" data-overlay="true" data-overlay-color="op-dark" data-overlay-click-close="true"  id="newstore">
+    <div style="margin-left:20px; margin-top: 20px; margin-bottom: 20px;">
+      <h3>Store Information</h3>
+      <%= form_for :store, url: '/stores', html: {id: 'createstore'}, method: 'POST' do %>
+          <div class="input-control text">
+            <input type="text" name="store[storename]" id="update" placeholder="Store name" required/>
+          </div>
+          <button type="submit" class="button primary" style="margin-left: 20px;"><span class="mif-plus"></span> Save...</button>
+      <% end %>
+    </div>
+  </div>
+</div>

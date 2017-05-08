@@ -14,7 +14,8 @@
 <%= yield %>
 
 <% flash.each do |message_type, message| %>
-    <div class="alert alert-<%= message_type %>"><%= message %></div>
+    <div class="popover marker-on-left bg-cyan fg-white <%= message_type %> " style="width: 20px; margin-left: 20px;"><%= message %>
+    </div>
 <% end %>
 </body>
 </html>

@@ -10,12 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170428153100) do
+ActiveRecord::Schema.define(version: 20170508084148) do
 
   create_table "roles", force: :cascade do |t|
     t.string   "title",      null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "stores", force: :cascade do |t|
+    t.string   "storename"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "user_id"
+    t.index ["user_id"], name: "index_stores_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -24,7 +32,6 @@ ActiveRecord::Schema.define(version: 20170428153100) do
     t.string   "email",           null: false
     t.string   "password_digest", null: false
     t.integer  "role_id"
-    t.integer  "store_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
   end

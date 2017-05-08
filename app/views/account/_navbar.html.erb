@@ -1,0 +1,22 @@
+<ul class="h-menu navbar">
+  <li>
+    <div>
+      <div class="header" style="color:white; font-family: 'Trebuchet MS'; padding-top: 6px; padding-left:5px;"> <span class="mif-earth" style="color: #fdffd4;"></span> Online Store</div>
+    </div>
+  </li>
+  <li class="place-right no-hovered">
+    <a href="#" class="dropdown-toggle logout">More...</a>
+    <ul  class="d-menu" data-role="dropdown">
+      <li><%= link_to "Logout",
+                      logout_path,
+                      method: :delete
+      %></li>
+    </ul>
+  </li>
+  <li class="place-right">
+    <a href="#"><span class=" menu mif-home"></span> Home</a>
+  </li>
+</ul>
+
+
+

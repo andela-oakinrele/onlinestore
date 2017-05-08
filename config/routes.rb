@@ -1,4 +1,18 @@
 Rails.application.routes.draw do
+  # get 'account/new'
+  #
+  # get 'account/create'
+  #
+  # get 'account/update'
+  #
+  # get 'account/edit'
+  #
+  # get 'account/destroy'
+  #
+  # get 'account/index'
+  #
+  # get 'account/show'
+
   resources :stores
   resources :users, only: [:new, :create, :edit, :index, :show]
   resources :roles
